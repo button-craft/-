@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON!!!</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #bb86fc;
+            --secondary-color: #03dac6;
+            --surface-color: #1e1e1e;
+            --error-color: #cf6679;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--surface-color);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--accent-color);
+            text-align: center;
+        }
+        
+        .search-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background-color: var(--surface-color);
+            margin-bottom: 1rem;
+        }
+        
+        .search-bar {
+            display: flex;
+            width: 50%;
+            max-width: 600px;
+        }
+        
+        .search-bar input {
+            flex-grow: 1;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            background-color: #333;
+            color: var(--text-color);
+        }
+        
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: var(--accent-color);
+            color: #121212;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #121212;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            text-align: center;
+            min-width: 150px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .button:hover {
+            background-color: #a36fe6;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        .button.green {
+            background-color: var(--secondary-color);
+        }
+        
+        .button.green:hover {
+            background-color: #02b8a7;
+        }
+        
+        .button.red {
+            background-color: var(--error-color);
+        }
+        
+        .button.red:hover {
+            background-color: #b5596b;
+        }
+        
+        .button.yellow {
+            background-color: #ffb300;
+            color: #121212;
+        }
+        
+        .button.yellow:hover {
+            background-color: #e09c00;
+        }
+        
+        .button.blue {
+            background-color: #2196f3;
+        }
+        
+        .button.blue:hover {
+            background-color: #0c7cd5;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: var(--secondary-color);
+            margin: 2rem 0;
+        }
+        
+        .alphabet-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            gap: 5px;
+        }
+        
+        .alphabet-nav a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background-color: var(--surface-color);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        .alphabet-nav a:hover, .alphabet-nav a.active {
+            background-color: var(--accent-color);
+            color: #121212;
+        }
+        
+        .letter-section {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1rem;
+        }
+        
+        .letter-heading {
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            background-color: var(--surface-color);
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--surface-color);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">BUTTON!!!</h1>
+    </header>
+    
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for BUTTON!!!s...">
+            <button type="submit">Search</button>
+        </div>
+    </div>
+    
+    <main>
+        <h2 class="section-title">an array of BUTTON!!!s</h2>
+        
+        <div class="alphabet-nav">
+            <a href="#A">A</a>
+            <a href="#B">B</a>
+            <a href="#C">C</a>
+            <a href="#D">D</a>
+            <a href="#E">E</a>
+            <a href="#F">F</a>
+            <a href="#G">G</a>
+            <a href="#H">H</a>
+            <a href="#I">I</a>
+            <a href="#J">J</a>
+            <a href="#K">K</a>
+            <a href="#L">L</a>
+            <a href="#M">M</a>
+            <a href="#N">N</a>
+            <a href="#O">O</a>
+            <a href="#P">P</a>
+            <a href="#Q">Q</a>
+            <a href="#R">R</a>
+            <a href="#S">S</a>
+            <a href="#T">T</a>
+            <a href="#U">U</a>
+            <a href="#V">V</a>
+            <a href="#W">W</a>
+            <a href="#X">X</a>
+            <a href="#Y">Y</a>
+            <a href="#Z">Z</a>
+        </div>
+        
+        <div id="A" class="letter-section">
+            <h3 class="letter-heading">A</h3>
+            <div class="buttons-container">
+
+            </div>
+        </div>
+        
+        <div id="B" class="letter-section">
+            <h3 class="letter-heading">B</h3>
+            <div class="buttons-container">
+                <a href="blank4.html" class="button red">BUTTON Cards</a>
+                <a href="blank6.html" class="button">BCC Experimental</a>
+                <a href="blank8.html" class="button blue">BUTTONBoard Hot 100</a>
+            </div>
+        </div>
+        
+        <div id="C" class="letter-section">
+            <h3 class="letter-heading">C</h3>
+            <div class="buttons-container">
+                <a href="blank9.html" class="button">Code Challenge</a>
+            </div>
+        </div>
+        
+        <div id="D" class="letter-section">
+            <h3 class="letter-heading">D</h3>
+            <div class="buttons-container">
+
+            </div>
+        </div>
+        
+        <div id="E" class="letter-section">
+            <h3 class="letter-heading">E</h3>
+            <div class="buttons-container">
+
+            </div>
+        </div>
+        
+        <div id="F" class="letter-section">
+            <h3 class="letter-heading">F</h3>
+            <div class="buttons-container">
+
+            </div>
+        </div>
+        
+        <div id="P" class="letter-section">
+            <h3 class="letter-heading">P</h3>
+            <div class="buttons-container">
+
+            </div>
+        </div>
+        
+        <div id="T" class="letter-section">
+            <h3 class="letter-heading">T</h3>
+            <div class="buttons-container">
+
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 BUTTON!!! All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple search functionality
+        const searchInput = document.querySelector('.search-bar input');
+        const searchButton = document.querySelector('.search-bar button');
+        const buttons = document.querySelectorAll('.button');
+        
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            buttons.forEach(button => {
+                const buttonText = button.textContent.toLowerCase();
+                if (buttonText.includes(searchTerm)) {
+                    button.style.display = 'inline-block';
+                    // Highlight the parent section
+                    const section = button.closest('.letter-section');
+                    if (section) {
+                        section.style.display = 'block';
+                    }
+                } else {
+                    button.style.display = 'none';
+                    // Check if all buttons in this section are hidden
+                    const section = button.closest('.letter-section');
+                    if (section) {
+                        const visibleButtons = section.querySelectorAll('.button[style="display: inline-block;"]');
+                        if (visibleButtons.length === 0) {
+                            section.style.display = 'none';
+                        }
+                    }
+                }
+            });
+            
+            // If search is empty, show all
+            if (searchTerm === '') {
+                buttons.forEach(button => {
+                    button.style.display = 'inline-block';
+                });
+                document.querySelectorAll('.letter-section').forEach(section => {
+                    section.style.display = 'block';
+                });
+            }
+        }
+        
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>
